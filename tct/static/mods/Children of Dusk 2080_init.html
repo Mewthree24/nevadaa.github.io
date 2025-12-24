@@ -1,0 +1,714 @@
+image_dict = {
+	"tct_header": "https://i.imgur.com/m67QDeV.png",
+	"tct_background": "https://i.imgur.com/Y9pxxOw.jpeg",
+	"tct_election_img": "https://i.imgur.com/c8OqvzK.png",
+	"election_jackson": "https://i.imgur.com/OgL1tqw.png",
+	"faith_mother": "https://i.imgur.com/YzUcO5R.png",
+	"darwin_father": "https://i.imgur.com/iLKrhEM.png",
+	"lady_liberty": "https://i.imgur.com/cagfBXR.png",
+	"unmaker": "https://i.imgur.com/sh0OPuy.png",
+	"nigeria_pres": "https://i.imgur.com/B3hUcxv.png",
+	"nigeria_flag": "https://i.imgur.com/HYirNEh.png",
+	"shephard_portrait": "https://i.imgur.com/9OGEYNO.png",
+	"moralintern_portrait": "https://i.imgur.com/iZLNeYp.png",
+	"jacksonist_advisor": "https://i.imgur.com/s73kFdZ.png",
+	"moralist_advisor": "https://i.imgur.com/4tg36vW.png",
+	"nigerian_advisor": "https://i.imgur.com/XLgW4jB.png",
+	"williams_portrait": "https://i.imgur.com/Q8x6ig4.png",
+	"moralist_usa": "https://i.imgur.com/69gaGeT.png",
+	"jacksonist_flag": "https://i.imgur.com/IHRsMx5.png",
+	"jackson_jr_portrait": "https://i.imgur.com/bTJuVu6.png",
+	"sanders_portrait": "https://i.imgur.com/OFipXwi.png",
+	"hooper_portrait": "https://i.imgur.com/lkUhTuQ.png",
+	"crowder_portrait": "https://i.imgur.com/72qHNFm.png",
+	"shephard_dream": "https://i.imgur.com/5bj8OUK.png",
+	"moralintern_old": "https://i.imgur.com/IPbADiT.png",
+	"moralist_dream_advisor": "https://i.imgur.com/4H4gJS4.png",
+	"american_people": "https://i.imgur.com/J06ctrG.png",
+}
+
+e.collect_results = "true";
+
+campaignTrail_temp.election_json = [
+    {
+        "model": "campaign_trail.election",
+        "pk": 21,
+        "fields": {
+            "year": 2080,
+            "display_year": "THE HEAVENS AND THE EARTH",
+            "summary": "All good things come to an end eventually. From the ashes of the 4th World War, a nation rebuilds. <br><br>America, the last great power of the Global North. Its diadem of 50 stars tarnished, its body wounded, but its lungs are still breathing.<br><br>The final settlements of the liberal order are coming to a head; the old world is dying, and the new world is getting ready to be born.<br><br>It all comes to a head in their first election since the eve of the 4th World War.",
+            "image_url": image_dict["tct_election_img"],
+            "winning_electoral_vote_number": 270,
+            "advisor_url": "123",
+            "recommended_reading": "",
+            "has_visits": 1,
+            "no_electoral_majority_image": "../static/images/2012-no-majority.jpg"
+        }
+    }
+]
+
+campaignTrail_temp.temp_election_list = [
+    {
+        "id": 21,
+        "year": 2020,
+        "is_premium": 0,
+        "display_year": "THE HEAVENS AND THE EARTH"
+    }
+]
+
+credits = `All coding, writing done by DK_ERMNA.
+
+Special thanks to Noobfield2042 for the election scenario image.
+Special thanks to ChickenLover2 (Person) for helping with ideas.
+
+Credit goes to Naimina OS for some of the specialized functions.
+
+All proceeds go towards funding the elimination of the liberal race.`
+
+campaignTrail_temp.credits = `<span style="color:blue; cursor:pointer;"><strong onclick ="alert(\`${credits}\`);">the Global Chudocracy</strong></span>`
+
+campaignTrail_temp.global_parameter_json = [
+    {
+        "model": "campaign_trail.global_parameter",
+        "pk": 1,
+        "fields": {
+            "vote_variable": 1.125,
+            "max_swing": 0.12,
+            "start_point": 1,
+            "candidate_issue_weight": 10,
+            "running_mate_issue_weight": 0,
+            "issue_stance_1_max": -0.75,
+            "issue_stance_2_max": -0.45,
+            "issue_stance_3_max": -0.15,
+            "issue_stance_4_max": 0.15,
+            "issue_stance_5_max": 0.45,
+            "issue_stance_6_max": 0.75,
+            "global_variance": 0.01,
+            "state_variance": 0.005,
+            "question_count": 27,
+            "default_map_color_hex": "#C9C9C9",
+            "no_state_map_color_hex": "#999999"
+        }
+    }
+]
+
+jacksonism_def = `
+Jackson's ideology can be summed up as the following.
+
+Unity is strength. Division is treason. Service is loyalty.
+
+He came to power in a time of national crisis, and extreme internal division. He ousted the previous regime of Christian nationalists and moralistic theocrats.
+
+The ideology of Jacksonism has three main pillars of support. Secularists, who fear the Christian majority, Militarists, who put emphasis on duty and sacrifice, and Nationalists, who want a proud nation.
+
+Many compare Jackson to Ataturk, others Caesar, others Aurelian. Jackson never wanted to be compared himself.
+
+`;
+
+HistHexcolour=["#212068","#723B2B","#57C655","#38A0D8","#808080"];
+HistName=[" Christian Moralists"," Civic Unionists"," Jacksonists (Crowder)"," Moralist Opposition"," Other"];
+HistEV=[415,71,50,0,0];
+HistPV=["49,178,109","40,287,607","38,804,438","12,813,102","10,593,196"];
+HistPVP=["32.4%","26.6%","25.6%","8.4%","7.0%"];
+
+campaignTrail_temp.candidate_json = [
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 300,
+        "fields": {
+            "first_name": "Ryan",
+            "last_name": "Jackson",
+            "election": 21,
+            "party": "Jacksonist Party USA",
+            "state": "Texas",
+            "priority": 1,
+            "description": `They call him “American Ataturk”, “American Caesar”. He never wanted those names, but fate forced his hand. His military coup put him into office, his reorganization pulled the country together, his direction won them the war.<br><br>It has been 16 years since that day; the people and the military’s other top brass are pressuring him to host elections. America is still fragile, a fledging bird still not ready to fly.<br><br>But he can’t hold off their pressure forever. He just needs perhaps 4 more years…<br><br><div style="color:blue; cursor:pointer;"><strong onclick ="alert(\`${jacksonism_def}\`);">More on Jackson...</strong></div>`,
+            "color_hex": "#CE621A",
+            "secondary_color_hex": null,
+            "is_active": 1,
+            "image_url": image_dict["election_jackson"],
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+	{
+        "model": "campaign_trail.candidate",
+        "pk": 301,
+        "fields": {
+            "first_name": "",
+            "last_name": "Moralists",
+            "election": 21,
+            "party": "",
+            "state": "",
+            "priority": 1,
+            "description": ``,
+            "color_hex": "#212068",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+	{
+        "model": "campaign_trail.candidate",
+        "pk": 302,
+        "fields": {
+            "first_name": "",
+            "last_name": "Other",
+            "election": 21,
+            "party": "",
+            "state": "",
+            "priority": 1,
+            "description": ``,
+            "color_hex": "#808080",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+	{
+        "model": "campaign_trail.candidate",
+        "pk": 304,
+        "fields": {
+            "first_name": "",
+            "last_name": "Jacksonist Opposition",
+            "election": 21,
+            "party": "",
+            "state": "",
+            "priority": 1,
+            "description": ``,
+            "color_hex": "#D39B41",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+	{
+        "model": "campaign_trail.candidate",
+        "pk": 305,
+        "fields": {
+            "first_name": "",
+            "last_name": "Moralist Opposition",
+            "election": 21,
+            "party": "",
+            "state": "",
+            "priority": 1,
+            "description": ``,
+            "color_hex": "#38A0D8",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },	
+	{
+        "model": "campaign_trail.candidate",
+        "pk": 1776,
+        "fields": {
+            "first_name": "",
+            "last_name": "The Will of the People",
+            "election": 21,
+            "party": "Independent",
+            "state": "Shining City Upon a Hill",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": image_dict["lady_liberty"],
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": `Liberty? Equality? She’s not even sure what those even mean anymore. Every principle her Enlightenment Fathers taught her, the world has destroyed or obfuscated.<br><br>3 centuries, 4 World Wars, and a shift of power from the Global North to South, she can hardly recognize the world she once knew.<br><br>The final settlements of the Enlightenment Project are about to come to a head. She can feel it now, something new is about to be born. She doesn’t know exactly what it is.<br><br>The old world is dying, the new world is ready to be born.`,
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 2001,
+        "fields": {
+            "first_name": "",
+            "last_name": "Thorn-Bride of a Thousand Crowns",
+            "election": 21,
+            "party": "Christian Moralist Party",
+            "state": "“In the beginning, God created the heavens…”",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": image_dict["faith_mother"],
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": `<div style="overflow-y: scroll; height: 200px">(Not playable, flavor text only)<br><br>What if you could build the perfect world?<br><br>God came to us, so long ago, and promised us that however much we may suffer, that this world is not all there is.<br><br>That one day, all good things will be made new again. That one day, the gates of Eden will be reopened.<br><br>Spirit help us create. To construct the New Jerusalem.<br><br> Until that day comes, she waits. Awaiting the return of her husband, the return of her God.</div>`,
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+	{
+        "model": "campaign_trail.candidate",
+        "pk": 2002,
+        "fields": {
+            "first_name": "",
+            "last_name": "Storm-Warrior of the Wastelands",
+            "election": 21,
+            "party": "Jacksonist Party USA",
+            "state": "“… and the earth. The earth was without form and void...”",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": image_dict["darwin_father"],
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": `<div style="overflow-y: scroll; height: 200px">(Not playable, flavor text only)<br><br>Would you want to live in a world without struggle?<br><br>The weakling’s world? That of the decadent, the hedonist, and the beggar?<br><br>No. This world offers only two certainties. That one day, we will die, that our children will replace us, and that destiny belongs to the strong. In honor, we find purpose. In struggle, we find meaning.<br><br>We fight, we struggle, evolution is continuous. God does not bless, he selects. Darwinism is his filter; evolution is his will.<br><br>The stars are mankind’s birthright.</div>`,
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+	{
+        "model": "campaign_trail.candidate",
+        "pk": 6666,
+        "fields": {
+            "first_name": "",
+            "last_name": "Unravelling/Unmaker",
+            "election": 21,
+            "party": "ASARINISM INTERNATIONALE",
+            "state": "“… and darkness was over the face of the deep…”",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": image_dict["unmaker"],
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": `(Not playable, flavor text only)<br><br>The Beast resented God. For truth, for judgement, for the crime of existence itself. It resented the idea good and evil, for it could be judged by its standards, and the light burned. Because somewhere deep down, the Beast knew it would fail its scrutiny.<br><br>So, it would destroy. To negate, to unravel, to unmake the heavens, the earth, and ideas of good and evil itself. For it hated good, evil, and above all, itself. It resented its own existence, and existence in general. So it would unravel all there is.<br><br>`,
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+]
+
+campaignTrail_temp.opponents_default_json = [
+	{
+		"election": 21, 
+		"candidates": [300, 301, 302, 304, 305],
+	}
+];
+
+campaignTrail_temp.running_mate_json = [
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 12080,
+        "fields": {
+            "candidate": 300,
+            "running_mate": 1776,
+        }
+    },
+	{
+        "model": "campaign_trail.running_mate",
+        "pk": 12080,
+        "fields": {
+            "candidate": 300,
+            "running_mate": 2001,
+        }
+    },
+	{
+        "model": "campaign_trail.running_mate",
+        "pk": 12080,
+        "fields": {
+            "candidate": 300,
+            "running_mate": 2002,
+        }
+    },
+	{
+        "model": "campaign_trail.running_mate",
+        "pk": 12080,
+        "fields": {
+            "candidate": 300,
+            "running_mate": 6666,
+        }
+    }
+]
+
+
+//#startcode
+
+
+corrr = '\n              <h2>THE OPEN CAMPAIGN TRAIL</h2>\n            ';
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#700016";
+
+document.head.innerHTML += `<style>
+	.game_header {
+		background: #700016;
+	}
+`;
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#646464";
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+$(".container")[0].style.backgroundColor = "#000000";
+
+document.getElementById("header").src = image_dict["tct_header"];
+
+document.body.background = image_dict["tct_background"];
+document.body.style = "background-size: 100vw auto; background-repeat: repeat-y;";
+
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#b0b0b0!important;}</style>";
+
+//#endcode
+
+// Initialise custom music
+
+$("#music_player")[0].children[0].style.display="none"
+$("#music_player")[0].children[1].style.display="none"
+
+document.getElementById("modLoadReveal").style.display="none"
+document.getElementById("modloaddiv").style.display="none"
+
+musicBox = document.getElementById("music_player")
+musicBox.style.display=""
+
+var trackSel;
+e = campaignTrail_temp
+e.selectedSoundtrack = 0
+
+toTime = (seconds) => {
+  var date = new Date(null);
+  date.setSeconds(seconds);
+  return date.toISOString().substr(11, 8);
+}
+
+generateTime = () => {
+    // Get the audio element
+    var audio = document.getElementById("campaigntrailmusic");
+
+    timeTracker = document.createElement("div");
+    timeTracker.style = `
+      text-align:left;
+      border-style:solid;
+      border-width:3px;
+      height:150px;
+      width:200px;
+      background-color:#999999;
+      float:right;
+      padding: 10px;
+    `
+    $("#trackSelParent")[0].prepend(timeTracker);
+    $("#trackSelParent")[0].prepend(document.createElement("br"));
+
+    // Create a new element to display the current position of the audio
+    var positionDisplay = document.createElement("gg");
+    positionDisplay.id = "position-display";
+
+    // Create a new slider element to change the time
+    var timeSlider = document.createElement("input");
+    timeSlider.type = "range";
+    timeSlider.min = 0;
+    timeSlider.max = 1;
+    timeSlider.step = 0.001;
+    timeSlider.value = 0;
+    timeSlider.style.width = "200px";
+    timeSlider.id = "time-slider";
+
+    var pausePlay = document.createElement("button");
+    pausePlay.id = "position-display";
+    pausePlay.innerHTML = "<b>Pause</b>"
+    pausePlay.style.width = "100%";
+
+
+    pausePlay.addEventListener("click", event => {
+      event.preventDefault();
+      updatePositionDisplay();
+      let audio = document.getElementById("campaigntrailmusic");
+      if (audio.paused) {
+        audio.play();
+        event.target.innerHTML = "<b>Pause</b>";
+        return;
+      }
+      audio.pause();
+      event.target.innerHTML = "<b>Play</b>";
+      return;
+    })
+
+    var volumeLabel = document.createElement("gg");
+    volumeLabel.id = "volume-label";
+    volumeLabel.innerHTML = "<br><b>Volume: </b>"
+
+    var volumeSlider = document.createElement("input");
+    volumeSlider.type = "range";
+    volumeSlider.min = 0;
+    volumeSlider.max = 1;
+    volumeSlider.step = 0.001;
+    volumeSlider.value = 0;
+    volumeSlider.style.width = "200px";
+    volumeSlider.id = "volume-slider";
+
+    volumeSlider.value = audio.volume;
+
+    timeTracker.appendChild(pausePlay);
+    timeTracker.appendChild(document.createElement("br"));
+    timeTracker.appendChild(document.createElement("br"));
+    timeTracker.appendChild(positionDisplay);
+    timeTracker.appendChild(timeSlider);
+    timeTracker.appendChild(volumeLabel);
+    timeTracker.appendChild(volumeSlider);
+
+    updatePositionDisplay();
+
+    //for (let i = 0; i < 10; i++)
+    //timeTracker.append(document.createElement("br"));
+
+
+    // Function to update the position display
+    function updatePositionDisplay() {
+      positionDisplay.innerHTML = "<b>Time:</b> " + toTime(audio.currentTime) + "<br>";
+      timeSlider.value = audio.duration ? audio.currentTime / audio.duration : 0;
+    }
+
+    // Function to change the time of the audio
+    function changeTime() {
+      positionDisplay.innerHTML = "<b>Time:</b> " + toTime(audio.currentTime) + "<br>";
+      audio.currentTime = timeSlider.value * audio.duration;
+    }
+
+    updateVolume = event => {
+      audio.volume = event.target.value;
+    }
+    
+    // Update the position display and slider every second
+    setInterval(updatePositionDisplay, 1000);
+
+    // Listen for changes to the time slider and change the time of the audio
+    timeSlider.addEventListener("input", changeTime);
+    volumeSlider.addEventListener("input", updateVolume)
+}
+
+function newMusicPlayer() {
+  trackSel = document.createElement("div");
+  trackSel.id = "trackSelParent"
+  let z = `<br><br><br><br><br><br><br><br><br><br><div id='trackSel' style="text-align:left;border-style:solid;border-width:3px;overflow-y: scroll;overflow-x: hidden;height:200px; width:400px;background-color:#999999;float:right;">`
+  z += `<b><select id='selectSoundtrack' style='width: 280px'><option value='`+soundtracks[e.selectedSoundtrack].name+`'>`+soundtracks[e.selectedSoundtrack].name+"</option>"
+  for (i in soundtracks) {
+    if (soundtracks[e.selectedSoundtrack] != soundtracks[i]) {
+      z += `<option value='`+soundtracks[i].name+`'>`+soundtracks[i].name+`</option>`
+    }
+  }
+  z += `</select></b><br><br>`
+  // <label><input type="radio" name="option" value="option1">Option 1</label><br>
+  for (i in soundtracks[e.selectedSoundtrack].tracklist) {
+    let a = soundtracks[e.selectedSoundtrack].tracklist[i]
+    let b = `<label><input class="trackSelector" type="radio" name="trackSelector" value="`+i+`">`+a.name+`</label><br>`
+    z += b
+  }
+  z += "</div><br><br>"
+  trackSel.innerHTML = z
+
+  // select correct song
+
+  musicBox.appendChild(trackSel);
+  Array.from(document.getElementById("trackSel").children).filter(f=>{
+    return f.tagName == "LABEL"
+  }).map(f=>f.children[0])[0].checked = true
+
+  // set soundtrack changer
+
+  soundtrackSelector = document.getElementById("selectSoundtrack")
+  soundtrackSelector.onchange = function() {
+    for (i in soundtracks) {
+      if (soundtracks[i].name == soundtrackSelector.value) {
+        e.selectedSoundtrack = i
+        break
+      }
+    }
+    document.getElementById("trackSelParent").remove()
+    newMusicPlayer()
+  }
+
+  var matches = document.querySelectorAll('.trackSelector');
+
+  for (match in matches) {
+    matches[match].onchange = function() {
+      audio = $("#campaigntrailmusic")[0];
+      audio.src = soundtracks[e.selectedSoundtrack].tracklist[this.value].url
+      audio.currentTime = 0
+    }
+  }
+
+  musicBox.children[2].loop = false
+  musicBox.children[2].src = soundtracks[e.selectedSoundtrack].tracklist[0].url
+
+  musicBox.children[2].onended = function() {
+    console.log("next track")
+    let selected = Number(document.querySelector('input[name="trackSelector"]:checked').value);
+    let newSel = clamp(selected+1, soundtracks[e.selectedSoundtrack].tracklist.length-1, 0)
+    let buttons = Array.from(document.getElementById("trackSel").children).filter(f=>{
+      return f.tagName == "LABEL"
+    }).map(f=>f.children[0])
+    //let selectedIndex = buttons.map(f=>f.children[0]).map(f=>f.checked)
+    buttons[newSel].click()
+  }
+
+  for (let counter = 0; counter < 7; counter++) {
+    document.getElementById("trackSelParent").appendChild(document.createElement("br"))
+  }
+  
+  generateTime();
+}
+
+clamp = function(a, max, min, overflow=true) {
+  if (overflow) {
+    return a > max ? min : a < min ? max : a;
+  }
+  return a > max ? max : a < min ? min : a;
+}
+
+
+// Track list
+
+soundtracks = {
+	0: {
+		name: "Twin Siblings of Faust",
+		tracklist: [
+			{
+			"name": "Nightfall | Kavinsky",
+			"url": 'https://audio.jukehost.co.uk/uqyXOVAbnJjxdmbHHw8ncG3QyWv95Elf'
+			},
+			{
+			"name": "The Resistance | Josh Garrels",
+			"url": 'https://audio.jukehost.co.uk/2N2q3eE60liXSo0PhuirKOLUEdbLdRAO'
+			},
+			{
+			"name": "Knights of Cydonia | Muse",
+			"url": 'https://audio.jukehost.co.uk/ndAD4PCTSMMnZXRtSRQWCMn6SqRS3fz7'
+			},
+			{
+			"name": "Meant to Live | Switchfoot",
+			"url": 'https://audio.jukehost.co.uk/oJ8Qv47V2OWrGBftMZuO1KsWh6Ml4rVx'
+			},
+			{
+			"name": "Humans are such Easy Prey | Perturbator",
+			"url": 'https://audio.jukehost.co.uk/D0CS6boIBM49VaMWWQbHVgK56UH5HAtt'
+			},
+			{
+			"name": "The Chosen Ones | Dream Evil",
+			"url": 'https://audio.jukehost.co.uk/m51KmjqsvFu2lUOtEbhjFzhqDAYi2jmE'
+			},
+			{
+			"name": "angel | nixxiu",
+			"url": 'https://audio.jukehost.co.uk/sQPQQoV4zIJGtWtVjB3kp7I31XO2Clgz'
+			},
+			
+		],
+	},
+	
+	1: {
+		name: "Warrior Son of the Wastelands",
+		tracklist: [
+			{
+			"name": "Humans are such Easy Prey | Perturbator",
+			"url": 'https://audio.jukehost.co.uk/D0CS6boIBM49VaMWWQbHVgK56UH5HAtt'
+			},
+			{
+			"name": "Uprising | Muse",
+			"url": 'https://audio.jukehost.co.uk/7BLATOENWGddATBBQI5plakPnF06Zlr4'
+			},
+			{
+			"name": "The Chosen Ones | Dream Evil",
+			"url": 'https://audio.jukehost.co.uk/m51KmjqsvFu2lUOtEbhjFzhqDAYi2jmE'
+			},
+			{
+			"name": "angel | nixxiu",
+			"url": 'https://audio.jukehost.co.uk/sQPQQoV4zIJGtWtVjB3kp7I31XO2Clgz'
+			},
+			{
+			"name": "Nightfall | Kavinsky",
+			"url": 'https://audio.jukehost.co.uk/uqyXOVAbnJjxdmbHHw8ncG3QyWv95Elf'
+			},
+			{
+			"name": "Knights of Cydonia | Muse",
+			"url": 'https://audio.jukehost.co.uk/ndAD4PCTSMMnZXRtSRQWCMn6SqRS3fz7'
+			},
+			
+		],
+	},
+	
+	2: {
+		name: "Star Daughter of Atlanta",
+		tracklist: [
+			{
+			"name": "The Resistance | Josh Garrels",
+			"url": 'https://audio.jukehost.co.uk/2N2q3eE60liXSo0PhuirKOLUEdbLdRAO'
+			},
+			{
+			"name": "There'll come a Day | The Letter Black",
+			"url": 'https://audio.jukehost.co.uk/aYYRF2J9VcsNGagHZBqyYYQw8HhAHsB6'
+			},
+			{
+			"name": "Eurus | The Oh Hellos",
+			"url": 'https://audio.jukehost.co.uk/Da7o4v9BSazP9VxZGLYRFI2g4kW76S34'
+			},
+			{
+			"name": "Meant to Live | Switchfoot",
+			"url": 'https://audio.jukehost.co.uk/oJ8Qv47V2OWrGBftMZuO1KsWh6Ml4rVx'
+			},
+			{
+			"name": "flowers dressed in blue | STRINGS & HEART",
+			"url": 'https://audio.jukehost.co.uk/1oOUt0QjECeEGfkPejyvxhTa0D26JvSB'
+			},
+			{
+			"name": "Jesus Freak | dc Talk",
+			"url": 'https://audio.jukehost.co.uk/nF4eE2l8Wnq1Mm9FwO1HVxyXWOt14hv4'
+			},
+			
+		],
+	}
+}
+
+function change_soundtrack(num) {
+	e.selectedSoundtrack = num;
+	document.getElementById("selectSoundtrack").value = soundtracks[num].name;
+	document.getElementById("trackSelParent").remove()
+    newMusicPlayer();
+}
+
+// Set up new music player
+
+newMusicPlayer()
+// change_soundtrack(1)
