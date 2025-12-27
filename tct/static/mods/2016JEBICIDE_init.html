@@ -1,0 +1,216 @@
+campaignTrail_temp.global_parameter_json = [
+    {
+        "model": "campaign_trail.global_parameter",
+        "pk": 1,
+        "fields": {
+            "vote_variable": 1.125,
+            "max_swing": 0.12,
+            "start_point": 0.94,
+            "candidate_issue_weight": 10,
+            "running_mate_issue_weight": 3,
+            "issue_stance_1_max": -0.71,
+            "issue_stance_2_max": -0.3,
+            "issue_stance_3_max": -0.125,
+            "issue_stance_4_max": 0.125,
+            "issue_stance_5_max": 0.3,
+            "issue_stance_6_max": 0.71,
+            "global_variance": 0.01,
+            "state_variance": 0.005,
+            "question_count": 26,
+            "default_map_color_hex": "#C9C9C9",
+            "no_state_map_color_hex": "#999999"
+        }
+    }
+]
+
+campaignTrail_temp.election_json = [
+    {
+        "model": "campaign_trail.election",
+        "pk": 20,
+        "fields": {
+            "year": 2016,
+            "display_year": "2016JEBICIDE",
+            "summary": "Jeb bush and Hillary Clinton face off in the 2016 election. Jeb Bush is well-known among the American public, having served as governor of Florida, and is the younger Brother of former president George Bush. Clinton has served as First Lady, Senator, and Secretary of State. Clinton was the presumptive nominee from start to finish. <br><br>\n\n\nHow will their campaign play out? Can bush pull off an upset? Can Clinton continue the legacy of Obama?",
+            "image_url": "https://i.postimg.cc/kgspkNd1/image.png",
+            "winning_electoral_vote_number": 270,
+            "advisor_url": "https://i.ytimg.com/vi/3TMggQZJ0vI/maxresdefault.jpg",
+            "recommended_reading": "<ul>\n<li><a href=https://www.chicagotribune.com/opinion/editorials/ct-edit-chicago-tribune-biden-endorsement-20200925-lnyxsb5qvrftnjjmj3rnzj33jy-story.html>Our Case For Joe Biden</a></li>\n<li><a href=https://nationalinterest.org/feature/case-trump-166808>The Case For Trump</a></li>\n<li><a href=https://www.npr.org/2020/11/18/935730100/how-biden-won-ramping-up-the-base-and-expanding-margins-in-the-suburbs>How Biden Won: Ramping Up The Base And Expanding Margins In The Suburbs</a></li>\n<li><a href=https://www.prospectmagazine.co.uk/politics/donald-trump-joe-biden-us-election-almost-win-votes-concede>Why Did Trump Almost Win?</a></li>\n<li><a href=https://www.hoover.org/research/no-evidence-voter-fraud-guide-statistical-claims-about-2020-election>No Evidence For Voter Fraud: A Guide To Statistical Claims About The 2020 Election</a></li>\n</ul>",
+            "has_visits": 1,
+            "no_electoral_majority_image": "../static/images/2012-no-majority.jpg"
+        }
+    }
+]
+
+campaignTrail_temp.temp_election_list = [
+    {
+        "id": 20,
+        "year": 2016,
+        "is_premium": 0,
+        "display_year": "2016JEBICIDE"
+    }
+]
+
+campaignTrail_temp.credits = "@Bornila/allahgreatwarrior with assistance from others"
+
+campaignTrail_temp.candidate_json = [
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 200,
+        "fields": {
+            "first_name": "Jeb ",
+            "last_name": "Bush",
+            "election": 20,
+            "party": "Republican",
+            "state": "Florida",
+            "priority": 1,
+            "description": "<p>Jeb Bush is a former two-term Governor of Florida and a member of one of America’s most prominent political families. Known for his focus on education reform, economic development, and fiscal conservatism, Bush enters the 2016 Republican primary with significant experience in governance and national politics. \n<br><br>\nHaving barely secured his parties Nomination in what was supposed to be an easy Campaign, he stands ready for the Presidential run.</p>",
+            "color_hex": "#ff0000",
+            "secondary_color_hex": null,
+            "is_active": 1,
+            "image_url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a45f0cf6-44d4-4140-94a5-72e8925a09d6/d9pqz0f-8ddbbca9-936e-421b-80d6-570e4a5e14c3.jpg/v1/fill/w_800,h_1000,q_70,strp/jeb_bush___digital_caricature_painting_by_david_lacasse_d9pqz0f-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2E0NWYwY2Y2LTQ0ZDQtNDE0MC05NGE1LTcyZTg5MjVhMDlkNlwvZDlwcXowZi04ZGRiYmNhOS05MzZlLTQyMWItODBkNi01NzBlNGE1ZTE0YzMuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.h9vsJEKsGG2kw7a9VVXeHkA9co02QdZUQsGemNBRhWs",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 202,
+        "fields": {
+            "first_name": "Chris",
+            "last_name": "Christie",
+            "election": 20,
+            "party": "Republican",
+            "state": "New Jersey",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#ff0000",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://cdn.mos.cms.futurecdn.net/snik6r55EXETuYb7rczbCE-1200-80.jpg",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Chris Christie is the two-term Governor of New Jersey. Its funny really, how far one can fall, just 4 years ago Republicans were practically begging for Christie to get involved nationally, now with one of the lowest approval ratings in NJ History, there isnt anything Christie will bring to the table. Choosing him however would project confidence with the more mainstream Conservatives, with an unwillingness to compromise with the Populist wing of the GOP. </p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 201,
+        "fields": {
+            "first_name": "Hillary",
+            "last_name": "Clinton",
+            "election": 20,
+            "party": "Democratic",
+            "state": "Idaho",
+            "priority": 1,
+            "description": "<p>The demon of Babylon, AntiChrist coming to destroy America.<p> Google \"Clinton Bodycount Theory\" Its True kids!</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 203,
+        "fields": {
+            "first_name": "Ted",
+            "last_name": "Cruz",
+            "election": 20,
+            "party": "Republican",
+            "state": "Texas",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#dbf038",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://thecomicnews.com/images/edtoons/2016/0127/trump/04.jpg",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Frankly speaking, Ted Cruz is probably the only Option Bush has if he wants to keep the GOP alive, </p>",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    }
+]
+
+campaignTrail_temp.running_mate_json = [
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 170325,
+        "fields": {
+            "candidate": 200,
+            "running_mate": 202
+        }
+    }
+]
+
+campaignTrail_temp.opponents_default_json = [
+    {
+        "election": 20,
+        "candidates": [
+            200,
+            201,
+            203
+        ]
+    }
+]
+
+campaignTrail_temp.opponents_weighted_json = [
+    {
+        "election": 20,
+        "candidates": [
+            200,
+            201,
+            203
+        ]
+    }
+]
+
+jet_data = {
+    "headerColor": "#880721",
+    "windowColor": "#BFE6FF",
+    "containerColor": "#ffffff",
+    "innerWindowColor": "#E8FBFF",
+    "bannerImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Jeb_Hastag.svg/1920px-Jeb_Hastag.svg.png",
+    "backgroundImageUrl": "https://i.kym-cdn.com/photos/images/original/002/403/114/f5c.png",
+    "endingTextColor": "#000000",
+    "customQuote": "\"JEB CAN FIX IT\""
+}
+
+//#startcode
+
+
+corrr = '\n              <h2>THE CAMPAIGN TRAIL</h2><font id="wittyquote" size="4" color="white"><em>"JEB CAN FIX IT"</em></font>\n            ';
+
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#880721";
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#BFE6FF";
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+$(".container")[0].style.backgroundColor = "#ffffff";
+
+document.getElementById("header").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Jeb_Hastag.svg/1920px-Jeb_Hastag.svg.png";
+
+document.body.background = "https://i.kym-cdn.com/photos/images/original/002/403/114/f5c.png";
+
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#E8FBFF!important;}</style>";
+
+//#endcode
